@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+:root {
+    --color1: #c5a880;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*  =============== Header ============= */
+.header {
+    margin-bottom: -10%;
+    position: fixed;
+    z-index: 1111111111111;
+    position: relative;
+    background-color: transparent;
+}
+
+.header__container {
+    padding: 25px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.header__branch {
+    padding: 10px 0;
+}
+
+.header__branch span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header__branch small {
+    color: #fff;
+}
+
+.header__nav .nav__container {
+    
+}
+
+.header__nav .nav__container .nav__body {
+    display: flex;
+
+}
+
+.header__nav .nav__container .nav__body a{
+    padding: 15px 20px;
+    /* font-weight: bold; */
+    color: #fff;
+}
+
+.header__nav .nav__container .nav__body a:hover  {
+    border-bottom: 2px solid #ccc;
+}
+
+/* slider */
+.slider__container {
+    position: relative;
+}
+
+.home__img {
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    /* z-index: -1; */
+}
+
+.overlay {
+    opacity: 0.5;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(19, 17, 17, 0.829);
+    position: absolute;
+    height: 100vh;
+}
+
+.home__title {
+    position: absolute;
+    display: inline-block;
+    z-index: 1111111111;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.home__title .title__desc span{
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+}
+
+.home__title .title__desc span a {
+    color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.home__title .title__desc span a:hover {
+    color: var(--color1);
+}
+
+.home__title .title__desc h1 {
+    font-size: 80px;
+    display: inline-block;
+    color: #fff;
+    word-spacing: 4;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script';
+}
+
+/* =========== slider resto =========== */
+.resto__container {
+    padding: 7em 1em;
+    position: relative;
+    background-color: #f8f8f8;
+}
+
+.resto__title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.resto__title p{
+    color: var(--color1);
+    font-size: 19px;
+}
+
+.resto__title h2 {
+    font-size: 60px;
+}
+
+.resto__left {}
+
+
+
+.resto__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resto__left .itemL__container {
+    display: flex;
+    height: 600px;
+    max-height: 600px;
+    max-width: 500px;
+    width: 500px;
+    object-fit: cover;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.itemL__container .overlay {
+    position: absolute;
+    height: 600px;
+}
+
+.resto__right {
+    margin-left: 20px;
+}
+
+.resto__right .itemR__container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.resto__item {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    transition: all 0.3s linear;
+}
+
+.resto__item:hover {
+    background-color: black;
+}
+
+.resto__item img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-right: 20px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.resto__item .resto__sub p{
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.resto__item:hover p {
+    color: #fff;
+}
+
+.resto__item .resto__sub span {
+    font-size: 19px;
+    color: var(--color1);
+}
+
+
+/* =========== slider clients ========== */
+.clients__container {
+    position: relative;
+    padding: 0 10px;
+}
+
+.clients__img {
+    display: flex;
+}
+
+.clients__img img::-webkit-scrollbar {
+    width: 0;
+}
+
+.clients__img img {
+    overflow-x: auto;
+    height: 250px;
+    width: 242px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding-right: 10px;
+}
+
+/* ============ Footer ========== */
+
+.footer__container {
+    position: relative;
+    padding: 7em 3em;
+    background-color: black;
+    color: #fff;
+}
+
+.footer__container .footer__list {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-template-columns: .8fr 1.2fr .5fr .8fr;
+}
+
+.footer__container .footer__branch {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.footer__branch span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer__branch small {
+    color: #fff;
+}
+
+.footer__item {
+    /* max-width: 25%; */
+    padding: 10px;
+}
+
+.footer__item p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.footer__icon i{
+    color: var(--color1);
+    background-color: #2e2c2c;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 19px;
+    border-radius: 10px;
+}
+
+
+.footer__item h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.footer__item .service__container {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+}
+
+.footer__service .service {
+    margin-bottom: 10px;   
+}
+
+.footer__service .service:hover a{
+    color: var(--color1);
+}
+
+.service__container .footer__service:first-child {
+    margin-right: 50px;
+}
+
+.footer__service .service a{
+    color: #ccc;
+    font-size: 17px;
+    transition: all 0.2s ease;
+}
+
+.ques__container {
+    display: flex;
+}
+
+.ques__container i {
+    margin-right: 10px;
+    color: var(--color1);
+}
